@@ -1,0 +1,74 @@
+columns:
+  - ID: int
+  - year: int
+  - loan_limit: category
+  - Gender: category
+  - approv_in_adv: category
+  - loan_type: category
+  - loan_purpose: category
+  - Credit_Worthiness: category
+  - open_credit: category
+  - business_or_commercial: category
+  - loan_amount: float
+  - rate_of_interest: float
+  - Interest_rate_spread: float
+  - Upfront_charges: float
+  - term: float
+  - Neg_ammortization: category
+  - interest_only: category
+  - lump_sum_payment: category
+  - property_value: float
+  - construction_type: category
+  - occupancy_type: category
+  - Secured_by: category
+  - total_units: category
+  - income: float
+  - credit_type: category
+  - Credit_Score: float
+  - co-applicant_credit_type: category
+  - age: category
+  - submission_of_application: category
+  - LTV: float
+  - Region: category
+  - Security_Type: category
+  - dtir1: float
+
+numerical_columns:
+  - loan_amount
+  - rate_of_interest
+  - Interest_rate_spread
+  - Upfront_charges
+  - term
+  - property_value
+  - income
+  - Credit_Score
+  - LTV
+  - dtir1
+
+categorical_columns:
+  - loan_limit
+  - Gender
+  - loan_type
+  - loan_purpose
+  - Credit_Worthiness
+  - open_credit
+  - business_or_commercial
+  - Neg_ammortization
+  - interest_only
+  - lump_sum_payment
+  - construction_type
+  - occupancy_type
+  - Secured_by
+  - total_units
+  - credit_type
+  - co-applicant_credit_type
+  - age
+  - submission_of_application
+  - Region
+  - Security_Type
+drop_columns:
+  - _id
+  - ID
+  - status
+
+target_column: approv_in_adv
