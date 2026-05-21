@@ -87,7 +87,7 @@ MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
 # =========================
 # MODEL PUSHER
 # =========================
-MODEL_BUCKET_NAME = "my-shubham-mlopsproj"
+MODEL_BUCKET_NAME = "first-myself"
 MODEL_PUSHER_S3_KEY = "model-registry"
 
 # =========================

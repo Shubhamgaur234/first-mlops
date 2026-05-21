@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Loan approval model</p>
+          <h1>Loan Prediction</h1>
+        </div>
+        <a class="train-link" href="/train">Train model</a>
+      </header>
+
+      {% if context %}
+      <section class="result" role="status">{{ context }}</section>
+      {% endif %}
+
+      <form class="loan-form" method="post">
+        <label>ID<input name="ID" value="100001"></label>
+        <label>Year<input name="year" value="2019"></label>
+        <label>Loan limit<input name="loan_limit" value="cf"></label>
+        <label>Gender<input name="Gender" value="Male"></label>
+        <label>Approval in advance<input name="approv_in_adv" value="nopre"></label>
+        <label>Loan type<input name="loan_type" value="type1"></label>
+        <label>Loan purpose<input name="loan_purpose" value="p3"></label>
+        <label>Credit worthiness<input name="Credit_Worthiness" value="l1"></label>
+        <label>Open credit<input name="open_credit" value="nopc"></label>
+        <label>Business/commercial<input name="business_or_commercial" value="nob/c"></label>
+        <label>Loan amount<input name="loan_amount" value="206500"></label>
+        <label>Rate of interest<input name="rate_of_interest" value="4.5"></label>
+        <label>Interest spread<input name="Interest_rate_spread" value="0.5"></label>
+        <label>Upfront charges<input name="Upfront_charges" value="3000"></label>
+        <label>Term<input name="term" value="360"></label>
+        <label>Negative amortization<input name="Neg_ammortization" value="not_neg"></label>
+        <label>Interest only<input name="interest_only" value="not_int"></label>
+        <label>Lump sum payment<input name="lump_sum_payment" value="not_lpsm"></label>
+        <label>Property value<input name="property_value" value="308000"></label>
+        <label>Construction type<input name="construction_type" value="sb"></label>
+        <label>Occupancy type<input name="occupancy_type" value="pr"></label>
+        <label>Secured by<input name="Secured_by" value="home"></label>
+        <label>Total units<input name="total_units" value="1U"></label>
+        <label>Income<input name="income" value="4980"></label>
+        <label>Credit type<input name="credit_type" value="EXP"></label>
+        <label>Credit score<input name="Credit_Score" value="650"></label>
+        <label>Co-applicant credit type<input name="co-applicant_credit_type" value="CIB"></label>
+        <label>Age<input name="age" value="45-54"></label>
+        <label>Submission<input name="submission_of_application" value="to_inst"></label>
+        <label>LTV<input name="LTV" value="67.0"></label>
+        <label>Region<input name="Region" value="North"></label>
+        <label>Security type<input name="Security_Type" value="direct"></label>
+        <label>DTIR1<input name="dtir1" value="40"></label>
+        <button type="submit">Predict</button>
+      </form>
+    </main>
+  </body>
+</html>

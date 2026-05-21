@@ -13,3 +13,8 @@ python-dotenv
 certifi
 dill
 pyyaml==6.0.3
+boto3
+fastapi
+uvicorn
+python-multipart
+jinja2
